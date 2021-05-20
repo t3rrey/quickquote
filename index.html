@@ -9,16 +9,22 @@
 </head>
 <body>
     <div class="mainWrap">
-        <h1>Quote Number</h1>
+        <h1>Quick Quotes</h1>
         <div class="form-wrap">
-            <form action="submit">
-                <label for="address"></label>
-                <input type="text">
-                <input type="text" placeholder="address">
-                <input type="text" placeholder="name">
+            <form action="submit" id='quoteForm'>
+                <input type="text" placeholder='Quote Number' id='qn'>
+                <input type="text" placeholder="address" id='address'>
+                <input type="text" placeholder="name" id='name'>
+                <input type='text' placeholder="Hours" id='hours'>
+                <input type="file" id="img" name="img" accept="image/*" id='pic'>
+                <input type="submit">
             </form>
+
+            <div class="job-list">
+                <h1>Latest Quotes</h1>
+            </div>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script src='/js/main.js'></script>
 </body>
 </html>
